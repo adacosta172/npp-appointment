@@ -1,0 +1,290 @@
+
+> npp-aeec-firebase@7.3.0 test
+> node --test tests/*.test.cjs
+
+TAP version 13
+# Subtest: backend account gate rejects no account and anonymous provider
+ok 1 - backend account gate rejects no account and anonymous provider
+  ---
+  duration_ms: 3.204568
+  type: 'test'
+  ...
+# Subtest: backend rejects unverified, disabled, suspended, revoked or malformed session
+ok 2 - backend rejects unverified, disabled, suspended, revoked or malformed session
+  ---
+  duration_ms: 0.189505
+  type: 'test'
+  ...
+# Subtest: backend requires staff MFA and denies unknown roles
+ok 3 - backend requires staff MFA and denies unknown roles
+  ---
+  duration_ms: 0.129054
+  type: 'test'
+  ...
+# Subtest: all personal workspaces require sign-in and verification
+ok 4 - all personal workspaces require sign-in and verification
+  ---
+  duration_ms: 9.191548
+  type: 'test'
+  ...
+# Subtest: registration requires name, email, matching strong passwords and consent
+ok 5 - registration requires name, email, matching strong passwords and consent
+  ---
+  duration_ms: 0.451509
+  type: 'test'
+  ...
+# Subtest: resume only allows safe internal destinations and MFA requires resolver
+ok 6 - resume only allows safe internal destinations and MFA requires resolver
+  ---
+  duration_ms: 0.346941
+  type: 'test'
+  ...
+# Subtest: real callable rejects unauthenticated access to every private operation before database access
+ok 7 - real callable rejects unauthenticated access to every private operation before database access
+  ---
+  duration_ms: 7.791843
+  type: 'test'
+  ...
+# Subtest: real callable rejects unverified and anonymous identities
+ok 8 - real callable rejects unverified and anonymous identities
+  ---
+  duration_ms: 3.064357
+  type: 'test'
+  ...
+# Subtest: real callable requires a saved profile before allowing draft or submission operations
+ok 9 - real callable requires a saved profile before allowing draft or submission operations
+  ---
+  duration_ms: 1.702419
+  type: 'test'
+  ...
+# Subtest: real callable rejects administrator without MFA before private dashboard access
+ok 10 - real callable rejects administrator without MFA before private dashboard access
+  ---
+  duration_ms: 1.105251
+  type: 'test'
+  ...
+# Subtest: public health endpoint never reads private records
+ok 11 - public health endpoint never reads private records
+  ---
+  duration_ms: 1.036839
+  type: 'test'
+  ...
+# Subtest: callable safely reports firestore_index
+ok 12 - callable safely reports firestore_index
+  ---
+  duration_ms: 1.314997
+  type: 'test'
+  ...
+# Subtest: callable safely reports resource_missing
+ok 13 - callable safely reports resource_missing
+  ---
+  duration_ms: 0.873263
+  type: 'test'
+  ...
+# Subtest: callable safely reports service_permissions
+ok 14 - callable safely reports service_permissions
+  ---
+  duration_ms: 0.872952
+  type: 'test'
+  ...
+# Subtest: callable safely reports service_unavailable
+ok 15 - callable safely reports service_unavailable
+  ---
+  duration_ms: 1.656711
+  type: 'test'
+  ...
+# Subtest: callable safely reports backend_error
+ok 16 - callable safely reports backend_error
+  ---
+  duration_ms: 0.876508
+  type: 'test'
+  ...
+# Subtest: supplied Firebase Web App is the default
+ok 17 - supplied Firebase Web App is the default
+  ---
+  duration_ms: 11.045515
+  type: 'test'
+  ...
+# Subtest: empty environment values do not disable configured project
+ok 18 - empty environment values do not disable configured project
+  ---
+  duration_ms: 0.497468
+  type: 'test'
+  ...
+# Subtest: optional environment overrides are respected
+ok 19 - optional environment overrides are respected
+  ---
+  duration_ms: 0.268784
+  type: 'test'
+  ...
+# Subtest: emulator defaults do not use production identifiers
+ok 20 - emulator defaults do not use production identifiers
+  ---
+  duration_ms: 0.407262
+  type: 'test'
+  ...
+# Subtest: Realtime Database URL override is respected
+ok 21 - Realtime Database URL override is respected
+  ---
+  duration_ms: 0.39239
+  type: 'test'
+  ...
+# Subtest: deadline closes at midnight Ghana time
+ok 22 - deadline closes at midnight Ghana time
+  ---
+  duration_ms: 3.142474
+  type: 'test'
+  ...
+# Subtest: unpublished and future vacancies cannot accept applications
+ok 23 - unpublished and future vacancies cannot accept applications
+  ---
+  duration_ms: 0.211097
+  type: 'test'
+  ...
+# Subtest: reference prefix and uniqueness
+ok 24 - reference prefix and uniqueness
+  ---
+  duration_ms: 6.701494
+  type: 'test'
+  ...
+# Subtest: owner access does not leak records to other applicants
+ok 25 - owner access does not leak records to other applicants
+  ---
+  duration_ms: 0.234803
+  type: 'test'
+  ...
+# Subtest: staff cannot read drafts owned by another account
+ok 26 - staff cannot read drafts owned by another account
+  ---
+  duration_ms: 0.336426
+  type: 'test'
+  ...
+# Subtest: panel access depends on assignment
+ok 27 - panel access depends on assignment
+  ---
+  duration_ms: 0.126851
+  type: 'test'
+  ...
+# Subtest: only staff may approve and only explicitly authorised staff may decide
+ok 28 - only staff may approve and only explicitly authorised staff may decide
+  ---
+  duration_ms: 0.230617
+  type: 'test'
+  ...
+# Subtest: no skipping review or reversing final decision
+ok 29 - no skipping review or reversing final decision
+  ---
+  duration_ms: 0.12622
+  type: 'test'
+  ...
+# Subtest: magic byte recognition rejects executable content and short files
+ok 30 - magic byte recognition rejects executable content and short files
+  ---
+  duration_ms: 0.468505
+  type: 'test'
+  ...
+# Subtest: deny-by-default storage and firestore rules
+ok 31 - deny-by-default storage and firestore rules
+  ---
+  duration_ms: 0.869618
+  type: 'test'
+  ...
+# Subtest: only nominated UID gets candidate admin role, without decision authority
+ok 32 - only nominated UID gets candidate admin role, without decision authority
+  ---
+  duration_ms: 2.184905
+  type: 'test'
+  ...
+# Subtest: initial admin cannot bypass verified email or MFA
+ok 33 - initial admin cannot bypass verified email or MFA
+  ---
+  duration_ms: 0.253181
+  type: 'test'
+  ...
+# Subtest: completed bootstrap, disabled account and non-password provider cannot auto-promote
+ok 34 - completed bootstrap, disabled account and non-password provider cannot auto-promote
+  ---
+  duration_ms: 0.19244
+  type: 'test'
+  ...
+# Subtest: existing authorised staff retain explicit authority, no new authority is granted
+ok 35 - existing authorised staff retain explicit authority, no new authority is granted
+  ---
+  duration_ms: 0.195264
+  type: 'test'
+  ...
+# Subtest: Realtime Database rules deny all direct reads and writes with no child grants
+ok 36 - Realtime Database rules deny all direct reads and writes with no child grants
+  ---
+  duration_ms: 1.489369
+  type: 'test'
+  ...
+# Subtest: Firebase CLI uses the locked Realtime Database rules file
+ok 37 - Firebase CLI uses the locked Realtime Database rules file
+  ---
+  duration_ms: 0.244137
+  type: 'test'
+  ...
+# Subtest: direct file does not offer a fake Firebase account or offline submission
+ok 38 - direct file does not offer a fake Firebase account or offline submission
+  ---
+  duration_ms: 1.56364
+  type: 'test'
+  ...
+# Subtest: missing entry script leaves usable error and reload control
+ok 39 - missing entry script leaves usable error and reload control
+  ---
+  duration_ms: 0.609477
+  type: 'test'
+  ...
+# Subtest: startup timeout fails closed
+ok 40 - startup timeout fails closed
+  ---
+  duration_ms: 1.477581
+  type: 'test'
+  ...
+# Subtest: completed startup ignores watchdog
+ok 41 - completed startup ignores watchdog
+  ---
+  duration_ms: 0.443977
+  type: 'test'
+  ...
+# Subtest: online frontend contains no embedded offline demo
+ok 42 - online frontend contains no embedded offline demo
+  ---
+  duration_ms: 0.240792
+  type: 'test'
+  ...
+# Subtest: all deployment settings use the npm bundled frontend rather than the raw CDN source
+ok 43 - all deployment settings use the npm bundled frontend rather than the raw CDN source
+  ---
+  duration_ms: 8.593869
+  type: 'test'
+  ...
+# Subtest: build verifier accepts a complete relative asset graph
+ok 44 - build verifier accepts a complete relative asset graph
+  ---
+  duration_ms: 10.515819
+  type: 'test'
+  ...
+# Subtest: build verifier detects missing dynamic asset
+ok 45 - build verifier detects missing dynamic asset
+  ---
+  duration_ms: 4.216209
+  type: 'test'
+  ...
+# Subtest: build verifier detects accidental external CDN SDK imports
+ok 46 - build verifier detects accidental external CDN SDK imports
+  ---
+  duration_ms: 5.726168
+  type: 'test'
+  ...
+1..46
+# tests 46
+# suites 0
+# pass 46
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 204.12562

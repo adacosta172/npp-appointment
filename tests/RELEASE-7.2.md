@@ -1,0 +1,1 @@
+43 local tests passed. Static frontend built. New RTDB configuration and optional read-only operator diagnostic added. Live callable check failed with EAI_AGAIN DNS resolution before HTTP connection. Operator diagnostic requires authenticated ADC and has not run against live services. No production changes made; existing Firestore data model retained.

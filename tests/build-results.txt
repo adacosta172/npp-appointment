@@ -1,0 +1,5 @@
+
+> npp-aeec-firebase@7.3.0 build
+> vite build && node scripts/verify-build.mjs
+
+sh: 1: vite: not found

@@ -1,0 +1,10 @@
+NPP-AEEC 7.3 — ONLINE BUNDLED FRONTEND
+1. Extract the whole ZIP. Do not open raw index.html directly or upload it alone.
+2. For Vercel: import the full repository. Framework Vite; install npm install;
+   build npm run build; output dist-static; Node 22.x. Remove old no-install overrides.
+3. For Firebase: review README.md, enable the required services, and confirm the project is dedicated.
+   npx firebase-tools@14 login
+   npm run deploy:online -- --confirm-dedicated-project
+4. Open the deployed HTTPS website. If the connection screen remains, click Test backend
+   and inspect F12 > Console / Network. Run npm run check:live to verify the deployed callable.
+5. Complete verified admin sign-in/MFA, publish positions, and run private acceptance tests.

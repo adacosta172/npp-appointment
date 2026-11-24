@@ -1,0 +1,27 @@
+{
+  "name": "npp-aeec-firebase",
+  "private": true,
+  "version": "7.3.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/verify-build.mjs",
+    "preview": "vite preview",
+    "test": "node --test tests/*.test.cjs",
+    "start": "vite",
+    "build:static": "npm run build",
+    "check:live": "node scripts/check-live.mjs",
+    "deploy:online": "node scripts/deploy-online.mjs",
+    "build:verified": "npm run build && npm run check:live",
+    "check:firebase": "node functions/check-services.cjs"
+  },
+  "dependencies": {
+    "firebase": "11.10.0"
+  },
+  "devDependencies": {
+    "vite": "^6.3.6"
+  },
+  "engines": {
+    "node": "22.x"
+  }
+}
